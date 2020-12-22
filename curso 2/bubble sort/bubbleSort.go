@@ -10,7 +10,7 @@ func main() {
 	list := make([]int, 0)
 	for i := 0; i < 10; i++ {
 		var input string
-		fmt.Println("Enter an intergeer number, type letter x to stop: ")
+		fmt.Println("Enter an integer number, type letter x to stop: ")
 		fmt.Scan(&input)
 		input = strings.ToLower(input)
 		if input == "x" {
