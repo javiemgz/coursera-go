@@ -24,16 +24,13 @@ func main() {
 }
 
 func bubbleSort(slice []int) {
-	for {
-		swapped := false
+	swapped := false
+	for !swapped {
 		for i := 0; i < len(slice)-1; i++ {
 			if slice[i+1] < slice[i] {
 				swap(slice, i)
 				swapped = true
 			}
-		}
-		if !swapped {
-			break
 		}
 	}
 }
